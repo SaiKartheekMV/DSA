@@ -11,7 +11,7 @@ int main(){
         cin>>arr[i];
     }
 
-    int sum = 1;
+    int sum = 0;
     int maxlen = 0;
     unordered_map<int, int> mp;
     for( int i = 0;i<n;i++){
@@ -22,12 +22,12 @@ int main(){
         }
 
         if(sum == 0){
-            maxlen+=1;
+            maxlen = i+1;
         }
         if(mp.find(sum)!= mp.end()){
             maxlen = max(maxlen, i-mp[sum]);
         }
-        if(mp.find(sum) == mp.end()){
+        else{
             mp[sum] = i;
         }
     }
