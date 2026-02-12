@@ -3,7 +3,7 @@ using namespace std;
 
 bool appearsTwice(vector<int>& nums){
     int n = nums.size();
-    set<int>s;
+    unordered_set<int>s;
     for(int i=0;i<n;i++){
         if(s.count(nums[i])){
             return true;
