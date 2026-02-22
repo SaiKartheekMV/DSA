@@ -20,8 +20,8 @@ class RecentCounter{
 int main(){
     RecentCounter rc;
     cout<<rc.ping(1)<<endl;
-    cout<<rc.ping(10)<<endl;
-    cout<<rc.ping(300)<<endl;
+    cout<<rc.ping(100)<<endl;
+    cout<<rc.ping(3001)<<endl;
     cout<<rc.ping(3002)<<endl;
     return 0;
 }
