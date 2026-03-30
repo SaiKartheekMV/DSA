@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL), cout.tie(NULL);
+    int n;
+    cin>>n;
+    vector<int>nums(n);
+    for(int i=0;i<n;i++){
+        cin>>nums[i];
+    }
+    vector<int>ans(n, 0);
+    int sum = 0;
+    for(int i=0;i<n;i++){
+        sum += nums[i];
+        ans[i] = sum;
+    }
+
+    for(int i = 0;i<n;i++){
+        cout<<ans[i]<<" ";
+    }
+    return 0;
+}
