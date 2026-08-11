@@ -13,7 +13,7 @@ int solve(vector<int>&nums, int n, int target){
             left++;
         }
     }
-    return ans == INT_MAX ? -1 : ans;
+    return ans == INT_MAX ? 0 : ans;
 }
 
 int main(){
